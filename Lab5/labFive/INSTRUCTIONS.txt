@@ -1,0 +1,7 @@
+The following npm packages are used in this lab:
+- express
+
+In the terminal, use the cd command to change the directory to the labFive folder, and then run the npm install command.
+That will read the required npm packages from package.json and package-lock.json and will install all of them for you.
+
+Once you have done that, follow the exercises in the labFive folder

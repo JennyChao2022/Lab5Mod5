@@ -1,0 +1,81 @@
+<!--Read INSTRUCTIONS.txt first before writing any code in here-->
+
+<!--Read INSTRUCTIONS.txt first before writing any code in here-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <form>
+            <label>First Number:</label>
+            <input type="text" id="num1">
+            <br><br>
+            <label>Second Number:</label>
+            <input type="text" id="num2">
+            <br><br>
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+        
+        <h1>Add Result:</h1>
+        <h3 id="add-result"></h3>
+        <h1>Subtract Result:</h1>
+        <h3 id="subtract-result"></h3>
+        <h1>Multiply Result:</h1>
+        <h3 id="multiply-result"></h3>
+        <h1>Divide Result:</h1>
+        <h3 id="divide-result"></h3>
+        <h1>Exponentiate Result:</h1>
+        <h3 id="exponentiate-result"></h3>
+
+        <input type="button" value="Clear" onclick="clearForm()">
+    </body>
+    <script>
+        // let num1=2;
+        // let num2=4;
+        document.getElementById("submit-btn").addEventListener("click", function(event) {
+        event.preventDefault();
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+        
+            fetch(`/calculator/add?num1=${num1}&num2=${num2}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("add-result").innerHTML = data.result;
+            });
+
+            fetch(`/calculator/subtract?num1=${num1}&num2=${num2}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("subtract-result").innerHTML = data.result;
+            });
+
+            fetch(`/calculator/multiply?num1=${num1}&num2=${num2}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("multiply-result").innerHTML = data.result;
+            });
+
+            fetch(`/calculator/divide?num1=${num1}&num2=${num2}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("divide-result").innerHTML = data.result;
+            });
+            fetch(`/calculator/exponent?num1=${num1}&num2=${num2}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("exponentiate-result").innerHTML = data.result;
+            });
+        });
+        function clearForm() {
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("add-result").innerHTML = "";
+            document.getElementById("subtract-result").innerHTML = "";
+            document.getElementById("multiply-result").innerHTML = "";
+            document.getElementById("divide-result").innerHTML = "";
+            document.getElementById("exponentiate-result").innerHTML = "";
+            }
+        </script>
+</html>

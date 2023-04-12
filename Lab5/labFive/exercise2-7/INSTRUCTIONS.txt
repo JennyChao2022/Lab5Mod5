@@ -1,0 +1,96 @@
+Beneath every exercise in this instructions file, there will be a completed: false line.
+Once you finish the exercise, change the false to true - to track what you have done and not done
+
+This is the instructions for exercise 2 in module 5
+The slide for this exercise is 36
+
+Your first task is to make a backend server that:
+
+1. Has a calculator router
+2. The calculator router has 4 endpoints, add, subtract, multiply, divide
+3. The 4 endpoints will take 2 numbers as query parameters and will send a JSON object with the result in it. For example:
+    {
+        result: 10
+    }
+4. Serve the index.html file from the public folder - if using port 3000, when going to http://localhost:3000, the index.html file should be displayed
+
+Your second task is to change the index.html file so that:
+
+The index.html file should have 2 hardcoded numbers - they can be of whatever value you choose
+Once the page loads, the page should send those numbers to the 4 APIs you created above (calculator/add, calculator/subtract, calculator/multiply, calculator/divide)
+
+The sum received from the add API should be shown in the h3 with id add-result
+The result received from the subtract API should be shown in the h3 with id subtract-result
+The result received from the multiply API should be shown in the h3 with id multiply-result
+The result received from the divide API should be shown in the h3 with id divide-result
+
+Completed: false
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is the instructions for exercise 3 in module 5
+The slide for this exercise is 37
+
+Your task is to add an exponentation endpoint to your backend.
+Also modify the index.html file so it shows the result of the exponentation
+
+Completed: false
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is the instructions for exercise 4 in module 5
+The slide for this exercise is 38
+
+Your task is to play around with the code to find out more about:
+Query Parameters
+Path Parameters
+Request Headers
+Request Body
+
+Completed: false
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is the instructions for exercise 5 in module 5
+The slide for this exercise is 43
+
+Your task is to expand on the previous exercises and update your application to use controllers instead
+
+Completed: false
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is the instructions for exercise 6 in module 5
+The slide for this exercise is 55
+
+Part 1:
+    Expand your application to use a library that takes care of the calculations and integrate it in your code
+
+    Completed: false
+
+Part 2:
+    In the constructor function of the calculator library, set this.id to a random number (do not hardcode the number - must be randomly generated each time)
+    This way it will be almost impossible to have two of the same objects with the same id
+
+    Completed: false
+
+Part 3:
+    Create a generic library for logging
+    In the constructor function of the logging library, set this.id to a random number (do not hardcode the number - must be randomly generated each time)
+
+    Create a log method in the logging library that will log the ID of the logger, and the message passed to the logger
+
+    Completed: false
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is the instructions for exercise 7 in module 5
+The slide for this exercise is 66
+
+Part 1:
+    Your task is to write a Swagger specification for your entire project so far
+
+    Completed: false
+Part 2:
+    Find instructions in the exercise 7 folder :)

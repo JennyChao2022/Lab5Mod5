@@ -1,0 +1,7 @@
+Using what you learnt in module 5, recreate the social media services that
+you created in module 4, this time, on the server.
+
+We will use them again later on.
+
+Make sure to make a clean MVC Structure and use Swagger to test things out, and
+make a documentation that is easy to read and test
